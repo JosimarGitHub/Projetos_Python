@@ -4,7 +4,7 @@ import telnetlib
 import os
 
 #Informações para Acesso via Telnet
-with open('/home/dev_net/My_Projects/Arquivos_Json/Utilidades_Fabrica.txt','r') as arquivo:
+with open('/home/dev_net/My_Projects/Arquivos_Json/Lab_Automacao.txt','r') as arquivo:
 
     hosts = arquivo.readlines()
     arquivo.close()
