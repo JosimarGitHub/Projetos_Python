@@ -15,7 +15,7 @@ ultimaLInha = 0
 while ultimaLInha != nLinhas1:
 
     lido = False
-
+    
     while lido == False :
 
         for i in range(ultimaLInha,nLinhas1):
@@ -54,8 +54,32 @@ while ultimaLInha != nLinhas1:
         tn.write(password.encode('ascii') + b"\n")
 
     #Comando
+    
     tn.write(b"configure terminal\n")
-    tn.write(b"crypto key generate rsa \n")
-    tn.write(b"1024 \n")
+    tn.write(b"interface loopback 54\n")
+    tn.write(b"ip address 54.52.52.54 255.255.255.255\n")
+    tn.write(b"end\n\n")
+    time = 0
+    for delay in range(10000000):
+       time = time+1
+    tn.write(b"exit\n")
+
+    """tn.write(b"crypto key generate rsa \n")
+    tn.write(b"2048 \n")
     tn.write(b"end \n")
-    tn.write(b"exit")
+    tn.write(b"exit")"""
+
+    """tn.write(b"Reload\n")
+    flag = 0
+    for delay in range(1000):
+        flag = flag+1
+    tn.write(b"\n")
+    for delay in range(1000):
+        flag = flag+1
+    tn.write(b"yes\n")
+    for delay in range(1000):
+        flag = flag+1"""
+    
+    
+    
+
