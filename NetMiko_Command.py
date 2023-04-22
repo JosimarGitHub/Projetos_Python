@@ -51,7 +51,14 @@ iosv_l2_s7 = {
     'password': 'cisco',
 }
 
-all_devices = [iosv_l2_s1,iosv_l2_s2,iosv_l2_s3,iosv_l2_s4,iosv_l2_s5,iosv_l2_s6,iosv_l2_s7]
+iosv_l2_s8 = {
+    'device_type': 'cisco_xe',
+    'ip': '192.168.44.17',
+    'username': 'cisco',
+    'password': 'cisco',
+}
+
+all_devices = [iosv_l2_s1,iosv_l2_s2,iosv_l2_s3,iosv_l2_s4,iosv_l2_s5,iosv_l2_s6,iosv_l2_s7,iosv_l2_s8]
 n = 1
 for devices in all_devices:
     net_connect = ConnectHandler(**devices)

@@ -55,7 +55,7 @@ while ultimaLInha != nLinhas1:
         tn.write(password.encode('ascii') + b"\n")
 
     #Comando 1
-    
+    """
     tn.write(b"configure terminal\n")
     tn.write(b"router ospf 1\n")
     aux = bytes(("router-id "+str(linhaAtual)+"."+str(linhaAtual)+"."+str(linhaAtual)+"."+str(linhaAtual)+"\n"),encoding='utf-8')
@@ -75,17 +75,17 @@ while ultimaLInha != nLinhas1:
     tn.write(b"end\n")
     sleep(0.5)
     tn.write(b"exit\n")
-    
+    """
 
     #Comando 2
-    """
+    
     tn.write(b"configure terminal\n")
     tn.write(b"crypto key generate rsa \n")
     tn.write(b"2048\n")
     tn.write(b"end \n")
     sleep(0.5)
     tn.write(b"exit")
-    """
+    
     
     
     
