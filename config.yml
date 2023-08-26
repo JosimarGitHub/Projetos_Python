@@ -1,0 +1,17 @@
+---
+- name: NTP Config
+
+  hosts: routers
+
+  tasks:
+
+  - name: NTP Server Config
+    cisco.ios.ios_ntp:
+      server: 172.16.0.130
+      source_int: loopback 1
+      logging: false
+      state: present
+...
+
+
+
