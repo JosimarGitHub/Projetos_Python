@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "netprog_basics",
+			"path": "../../netprog_basics"
+		}
+	],
+	"settings": {}
+}
